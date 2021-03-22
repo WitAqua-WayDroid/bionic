@@ -106,6 +106,7 @@ static const char* const kLdGeneratedConfigFilePath = "/linkerconfig/ld.config.t
 static const char* const kSystemLibDir        = "/system/lib64";
 static const char* const kOdmLibDir           = "/odm/lib64";
 static const char* const kVendorLibDir        = "/vendor/lib64";
+static const char* const kVendorExtraLibDir   = "/vendor_extra/lib64";
 static const char* const kAsanSystemLibDir    = "/data/asan/system/lib64";
 static const char* const kAsanOdmLibDir       = "/data/asan/odm/lib64";
 static const char* const kAsanVendorLibDir    = "/data/asan/vendor/lib64";
@@ -113,6 +114,7 @@ static const char* const kAsanVendorLibDir    = "/data/asan/vendor/lib64";
 static const char* const kSystemLibDir        = "/system/lib";
 static const char* const kOdmLibDir           = "/odm/lib";
 static const char* const kVendorLibDir        = "/vendor/lib";
+static const char* const kVendorExtraLibDir   = "/vendor_extra/lib";
 static const char* const kAsanSystemLibDir    = "/data/asan/system/lib";
 static const char* const kAsanOdmLibDir       = "/data/asan/odm/lib";
 static const char* const kAsanVendorLibDir    = "/data/asan/vendor/lib";
@@ -123,6 +125,7 @@ static const char* const kAsanLibDirPrefix = "/data/asan";
 static const char* const kDefaultLdPaths[] = {
   kSystemLibDir,
   kOdmLibDir,
+  kVendorExtraLibDir,
   kVendorLibDir,
   nullptr
 };
@@ -133,6 +136,7 @@ static const char* const kAsanDefaultLdPaths[] = {
   kAsanOdmLibDir,
   kOdmLibDir,
   kAsanVendorLibDir,
+  kVendorExtraLibDir,
   kVendorLibDir,
   nullptr
 };
